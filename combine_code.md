@@ -1,7 +1,7 @@
 ```python
 import pandas as pd
 import numpy as np
-csv_file = pd.read_csv(r'C:\Users\shihy\smarthon\redata.csv')
+csv_file = pd.read_csv(r'C:\Users\KJY\fighteam\data.csv')
 
 
 new_data = csv_file
@@ -99,5 +99,9 @@ pear3_df = pd.DataFrame(pear3, index = ['버거킹 군자능동점', '빠오즈�
 tot = pear1_df + pear2_df + pear3_df
 
 
-tot.sort_values([0], ascending=False)
+tot = tot.sort_values([0], ascending=False)
+
+
+for i in range(0, 10):
+    print(tot.iloc[i])
 ```
