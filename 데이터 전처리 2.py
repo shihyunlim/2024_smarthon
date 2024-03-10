@@ -1,6 +1,5 @@
-> 피어슨 상관계수 이용하여 선택한 식당과 유사한 식당 10개를 추천
+# 피어슨 상관계수 이용하여 선택한 식당과 유사한 식당 10개를 추천
 
-```python
 import pandas as pd
 import numpy as np
 csv_file = pd.read_csv(r'C:\Users\shihy\smarthon\redata.csv')
@@ -104,4 +103,3 @@ tot = pear1_df + pear2_df + pear3_df
 tot = tot.sort_values([0], ascending=False)
 
 print(tot)
-```
