@@ -1,4 +1,3 @@
-```python
 all_reviews = []
 
 for i in num['고유번호']:
@@ -64,4 +63,3 @@ for i in num['고유번호']:
 res = pd.DataFrame({'리뷰' : all_reviews})
 res_tot = pd.concat([name, num, res], axis=1)
 res_tot.to_csv("data_all_tot_01260247.csv", encoding='utf-8-sig')
-```
